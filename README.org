@@ -27,6 +27,14 @@ A sample Dockerfile with graphviz and CJK font preinstalled. No more tofu!
 docker-compose build confluence
 #+end_src
 
+Or if you're too busy...
+
+如果你是个大忙人……
+
+#+begin_src shell
+docker-compose pull nykma/confluence-server-cjk:6.15.9
+#+end_src
+
 * SEEALSO
   :PROPERTIES:
   :ID:       759ec43c-10fe-46d0-aa34-2568b0cf212f
