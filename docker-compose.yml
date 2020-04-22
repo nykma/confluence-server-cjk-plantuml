@@ -1,0 +1,14 @@
+version: '3.1'
+services:
+  confluence:
+    image: nykma/confluence-server-cjk:6.15.9
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+    - ./data/confluence:/var/atlassian/application-data/confluence
+    environment:
+    - JVM_MINIMUM_MEMORY=512m
+    - JVM_MAXIMUM_MEMORY=2g
+    - TZ=Asia/Shanghai
+    # .....whatever
