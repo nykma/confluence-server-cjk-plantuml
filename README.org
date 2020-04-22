@@ -1,0 +1,35 @@
+#+TITLE: Dockerfile for confluence server w/ CJK font and graphviz
+#+AUTHOR: Nyk Ma <i@nyk.ma>
+* What's this 这是啥
+  :PROPERTIES:
+  :ID:       4ace7348-ccb6-4bd7-8c7d-bb3a188a4fb1
+  :END:
+
+A sample Dockerfile with graphviz and CJK font preinstalled. No more tofu!
+
+带中日韩字体、预装 graphviz （plantuml）的 confluence server Dockerfile。告别豆腐块！
+
+* Screenshot 效果图
+  :PROPERTIES:
+  :ID:       270b2690-51a3-44ee-b420-52092aebec0a
+  :END:
+
+[[https://user-images.githubusercontent.com/1191636/79956086-3c5d1600-84b2-11ea-8db7-fb490aea36be.png]]
+
+[[https://user-images.githubusercontent.com/1191636/79956238-76c6b300-84b2-11ea-991c-0dabe976e58b.png]]
+
+* Build
+  :PROPERTIES:
+  :ID:       691d0ec2-f770-415b-81ea-eb68ac27a179
+  :END:
+
+#+begin_src shell
+docker-compose build confluence
+#+end_src
+
+* SEEALSO
+  :PROPERTIES:
+  :ID:       759ec43c-10fe-46d0-aa34-2568b0cf212f
+  :END:
+
+- Usage: [[https://hub.docker.com/r/atlassian/confluence-server][Docker hub: atlassian/confluence-server]]
